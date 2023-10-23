@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:0;
+}
+#navbar{
+    height: 60px;
+    background-color: #132c2c;
+
+}
+#photo{
+    color:#f08804;
+    font-size:25px ;
+    font-style: italic;
+}
+#button{
+    background-color: #f08804;
+    color: aliceblue;
+    
+}
+a{
+    margin: 280px;
+}
+h1{
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+.accordion{
+    width: 40%;
+    margin: 50px;
+}
+.accordion-tab > label{
+    background: #F4A460;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    position:relative;
+    display: block;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-top: 1px solid#074d7c;
+}
+.accordion-tab >.accordion-content{
+    max-height: 0;
+    transition: all .4s;
+    overflow: hidden;
+}
+.accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+    max-height: 100vh;
+    padding: 20px;
+}
+.accordion-tab .accordion-toggle{
+    display: none;
+}
+.accordion-tab > label:after{
+    content: "\f078";
+    font-family: fontawesome;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    transform: rotate(0deg);
+    transition:transform .3s ;
+}
+.accordion-tab > .accordion-toggle:checked ~label:after{
+    transform: rotate(180deg);
+}
+#t3{
+    font-size: 150%;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+}
+#t4{
+    font-size: 150%;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+}
+#t5{
+    font-size: 150%;
+    text-align: right;
+}
+#t6{
+    font-size: 250%;
+    text-align: right;
+    color: crimson;
+}
